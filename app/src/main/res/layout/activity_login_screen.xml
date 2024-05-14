@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginScreen">
+
+
+    <ImageView
+        android:id="@+id/icon_banner"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splash_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/let_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's sign you in"
+        android:layout_below="@id/icon_banner"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black2"
+        android:fontFamily="@font/popins"/>
+
+
+
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back"
+        android:layout_below="@id/let_sign_in"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/popins"
+        android:textColor="@color/black2"/>
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/loginscreen_pass_user_background_white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcome_tv"
+        android:hint="Email"
+        android:textColorHint="@color/LightDark"
+        android:textColor="@color/black2"
+        android:textSize="14sp"
+        android:fontFamily="@font/popins"
+        android:paddingStart="20dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/loginscreen_pass_user_background_white"
+        android:layout_below="@id/username"
+        android:hint="Password"
+        android:textColorHint="@color/LightDark"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/popins"
+        android:paddingStart="20dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/show_password_button"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        android:src="@drawable/password_eye"
+        app:tint="@color/LightDark" />
+
+
+
+    <TextView
+        android:id="@+id/dont_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_below="@id/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/LightDark"
+        android:textSize="16sp"
+        android:fontFamily="@font/popins"/>
+
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/popins"
+        android:textColor="@color/blue"
+        android:layout_toEndOf="@+id/dont_have_account"
+        android:layout_marginStart="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN IN"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:background="@drawable/login_screen_button_design"
+        android:fontFamily="@font/popins"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>
